@@ -97,10 +97,10 @@ function onSubmitFunction(event) {
   }
   
 
-// https://mystic-beta.vercel.app/
+// https://mystic-jade.vercel.app/
 // https://mystics-production.up.railway.app
 window.addEventListener("load", async () => {
-  await fetch(`${"https://mystic-beta.vercel.app"||"http://localhost:3000"}/admin/user?search=`)
+  await fetch(`${"https://mystic-jade.vercel.app"||"http://localhost:3000"}/admin/user?search=`)
     .then((res) => res.json())
     .then(({ data }) => {
       populateUserData(data);
@@ -112,7 +112,7 @@ async function handleUserSearch(e) {
     e.preventDefault();
   }
   const username = e.target.elements.search.value;
-  await fetch(`${"https://mystic-beta.vercel.app"||"http://localhost:3000"}/admin/user?search=${username}`)
+  await fetch(`${"https://mystic-jade.vercel.app"||"http://localhost:3000"}/admin/user?search=${username}`)
     .then((res) => res.json())
     .then(({ data }) => {
       populateUserData(data);
