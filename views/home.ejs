@@ -9,11 +9,8 @@
       <% blogs.forEach(blog => { %>
       <div class="card">
         <a
-          href="<% if(locals.user){ %>
-          /blog/<%= blog._id %>
-          <% }else{ %>
-              /user/signin
-          <% } %>"
+          href="
+          /blog/<%= blog._id %>"
         >
           <img class="thumbnail" src="<%= blog.coverImageUrl %>" alt="" />
         </a>
